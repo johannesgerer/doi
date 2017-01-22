@@ -1,0 +1,72 @@
+name:                doi
+version:             0.0.2
+synopsis:            Automatic Bibtex and fulltext of scientific articles
+description:
+   Extract Bibtex entries and download fulltext of scientific articles automatically for a given DOI or URL
+
+   .
+   See <https://github.com/johannesgerer/doi Readme> on Github.
+License:          MIT
+License-file:     LICENSE
+Author:           Johannes Gerer
+Maintainer:       Johannes Gerer <oss@johannesgerer.com>
+Homepage:         http://johannesgerer.com/doi
+Stability:        Experimental
+category:            Database
+build-type:          Simple
+cabal-version:       >=1.10
+
+executable doi
+  main-is:             main.hs
+  other-modules:       BibTeX
+                       , DOI
+  build-depends:       MissingH
+                     , async 
+                     , base
+                     , bibtex
+                     , directory
+                     , filepath
+                     , haskeline
+                     , optparse-applicative
+                     , parsec
+                     , process
+                     , regex-base
+                     , regex-compat
+                     , regex-tdfa
+                     , safe
+                     , strict
+                     , tagsoup
+                     , temporary
+                     , time
+                     , transformers
+                     , utility-ht
+                     , urlencoded
+                       
+  default-language:    Haskell2010
+
+
+library
+  exposed-modules: DOI
+                   , BibTeX
+  default-language: Haskell2010
+  build-depends:       MissingH
+                     , async 
+                     , base
+                     , bibtex
+                     , directory
+                     , filepath
+                     , haskeline
+                     , optparse-applicative
+                     , parsec
+                     , process
+                     , regex-base
+                     , regex-compat
+                     , regex-tdfa
+                     , safe
+                     , strict
+                     , tagsoup
+                     , temporary
+                     , time
+                     , transformers
+                     , utility-ht
+                     , urlencoded

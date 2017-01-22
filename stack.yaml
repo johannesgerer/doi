@@ -1,0 +1,10 @@
+resolver: lts-7.16
+
+packages:
+- '.'
+extra-deps:
+- bibtex-0.1.0.6
+- latex-0.1.0.3
+- urlencoded-0.4.1
+
+pvp-bounds: both
