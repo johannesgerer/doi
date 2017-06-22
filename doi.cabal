@@ -16,6 +16,10 @@ category:            Database
 build-type:          Simple
 cabal-version:       >=1.10
 
+Extra-source-files:
+                   README.md
+                   stack.yaml
+
 executable doi
   main-is:             main.hs
   other-modules:       BibTeX
