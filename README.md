@@ -19,12 +19,12 @@ curl -L 'http://localhost:8080/service?format=bibtex&selection=&url=http%3A%2F%2
   % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
                                  Dload  Upload   Total   Spent    Left  Speed
 100  1666  100  1666    0     0  38877      0 --:--:-- --:--:-- --:--:-- 39666
-"@Article{Vel\225squez2016,\nauthor=\"Vel{\\'a}squez, Santiago\nand Kanniainen, Juho\nand M{\\\"a}kinen,Saku\nand Valli, Jaakko\",\ntitle=\"Layoff announcements and intra-day market reactions\",\njournal=\"Review of Managerial Science\",\nyear=\"2016\",\npages=\"1--26\",\nabstract=\"This paper examines investor intra-day reactions related to two types of layoff announcements, the first one at the start of layoff negotiations and the other at the final layoff decisions. We provide statistically significant evidence that, on average, investors have strongly negative reaction to layoff negotiations within the first 10\160min. However, we also provide strong evidence that the first negative reaction is reversed by an upward post-drift in aggregated cumulative abnormal returns in the following hours, perhaps because markets need hours to process such unpredictable and complex information and its consequences---even if their first reaction was strong and immediate. Moreover, on the aggregated level, final layoff announcements do not generally convey information that is exceptionally useful to investors, except when reactions to associated initial announcements have not been statistically significant. Importantly, our analysis demonstrates the importance of the use of intra-day data: The reactions, which can be strong but short-lived, are identifiable with intra-day data only. Finally, we find that intra-day reactions cannot be explained by various company background characteristics, such as the number of employees, sales, profitability, and assets/liabilities ratio.\",\nissn=\"1863-6691\",\ndoi=\"10.1007/s11846-016-0219-7\",\nurl=\"http://dx.doi.org/10.1007/s11846-016-0219-7\"\n}\n\n"
+"@Article{Vel\225squez2016,\nauthor=\"Vel{\\'a}squez, Santiago\nand Kanniainen, Juho\nand M{\\\"a}kinen,Saku\nand Valli, Jaakko\",\ntitle=\"Layoff announcements and intra-day market reactions\",\njournal=\"Review of Managerial Science\",\nyear=\"2016\",\npages=\"1--26\",\nabstract=\"This paper examines investor intra-day reactions related to two types of layoff announcements, the first one at the start of layoff negotiations and the other at the final layoff decisions. We provide statistically significant evidence that, on average, investors have strongly negative reaction to layoff negotiations within the first 10\160min. However, we also provide strong evidence that the first negative reaction is reversed by an upward post-drift in aggregated cumulative abnormal returns in the following hours, perhaps because markets need hours to process such unpredictable and complex information and its consequences---even if their first reaction was strong and immediate. Moreover, on the aggregated level, final layoff announcements do not generally convey information that is exceptionally useful to investors, except when reactions to associated initial announcements have not been statistically significant. Importantly, our analysis demonstrates the importance of the use of intra-day data: The reactions, which can be strong but short-lived, are identifiable with intra-day data only. Finally, we find that intra-day reactions cannot be explained by various company background characteristics, such as the number of employees, sales, profitability, and assets/liabilities ratio.\",\nissn=\"1863-6691\",\ndoi=\"10.1007/s11846-016-0219-7\",\nurl=\"https://doi.org/10.1007/s11846-016-0219-7\"\n}\n\n"
 
-Downloading CrossRef BibTeX for http://dx.doi.org/10.1007/s11846-016-0219-7
+Downloading CrossRef BibTeX for https://doi.org/10.1007/s11846-016-0219-7
 
 
-curl -LH 'Accept: application/x-bibtex' 'http://dx.doi.org/10.1007/s11846-016-0219-7'
+curl -LH 'Accept: application/x-bibtex' 'https://doi.org/10.1007/s11846-016-0219-7'
 
   % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
                                  Dload  Upload   Total   Spent    Left  Speed
@@ -35,7 +35,7 @@ curl -LH 'Accept: application/x-bibtex' 'http://dx.doi.org/10.1007/s11846-016-02
 Downloading Website for 10.1007/s11846-016-0219-7
 
 /tmp/wget_doi1804289383846930886
---2017-01-22 17:27:18--  http://dx.doi.org/10.1007/s11846-016-0219-7
+--2017-01-22 17:27:18--  https://doi.org/10.1007/s11846-016-0219-7
 Resolving dx.doi.org (dx.doi.org)... 2a00:1a48:7805:113:be76:4eff:fe09:2bc4, 2001:550:100:6::138:163, 2001:550:100:6::138:162, ...
 Connecting to dx.doi.org (dx.doi.org)|2a00:1a48:7805:113:be76:4eff:fe09:2bc4|:80... connected.
 HTTP request sent, awaiting response... 303 See Other
@@ -90,7 +90,7 @@ and Valli, Jaakko},
   pages = {1--26},
   publisher = {Springer Nature},
   title = {Layoff announcements and intra-day market reactions},
-  url = {http://dx.doi.org/10.1007/s11846-016-0219-7},
+  url = {https://doi.org/10.1007/s11846-016-0219-7},
   url = {https://doi.org/10.1007%2Fs11846-016-0219-7},
   year = {2016},
   file = {doi/10.1007SLASHs11846-016-0219-7.pdf},

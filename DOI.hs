@@ -88,12 +88,12 @@ main = customExecParser (prefs showHelpOnError) (info (helper <*> optP) i) >>= a
             <> header "retrieve BibTeX information and PDFs from a DOI or URL" 
 
 
-test4 = " @article{Armada_2007, title={A modified finite-lived American exchange option methodology applied to real options valuation}, volume={17}, ISSN={1044-0283}, url={http://dx.doi.org/10.1016/j.gfj.2006.05.006}, DOI={10.1016/j.gfj.2006.05.006}, number={3}, journal={Global Finance Journal}, publisher={Elsevier BV}, author={Armada, Manuel Rocha and Kryzanowski, Lawrence and Pereira, Paulo Jorge}, year={2007}, month={Mar}, pages={419\8211\&438}}\n"
+test4 = " @article{Armada_2007, title={A modified finite-lived American exchange option methodology applied to real options valuation}, volume={17}, ISSN={1044-0283}, url={https://doi.org/10.1016/j.gfj.2006.05.006}, DOI={10.1016/j.gfj.2006.05.006}, number={3}, journal={Global Finance Journal}, publisher={Elsevier BV}, author={Armada, Manuel Rocha and Kryzanowski, Lawrence and Pereira, Paulo Jorge}, year={2007}, month={Mar}, pages={419\8211\&438}}\n"
 
 
 test = "http://www.sciencedirect.com/science/article/pii/S1044028306000603"
-test2 ="http://dx.doi.org/10.1016/j.gfj.2006.05.006"
-test3 = "http://dx.doi.org/10.2139/ssrn.1709599"
+test2 ="https://doi.org/10.1016/j.gfj.2006.05.006"
+test3 = "https://doi.org/10.2139/ssrn.1709599"
        
 parseOrError name x y = either (error . unlines . (:[y]) . show) id $ parse x name y
 parseBib name bib = f . parseOrError name (B1.skippingLeadingSpace $ B1.skippingSpace B1.file)
@@ -174,7 +174,7 @@ extractDoi input = -- maybe (error $ printf "Could not extract DOI from '%s'"  i
                    ((!!3).getAllTextSubmatches) <$>
                    input =~~ "^(http://(dx\\.)?doi\\.org/|doi:)?([^./]+\\.[^/]+/.*)"
 
-doiUrl doi = "http://dx.doi.org/" ++ doi
+doiUrl doi = "https://doi.org/" ++ doi
     
 selectLink :: [String] -> IO (Maybe String)
 selectLink = runInputT defaultSettings . f . fmap transformUrl
